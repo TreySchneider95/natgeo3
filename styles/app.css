@@ -1,0 +1,226 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root{
+    --primary:#ffcc00;
+}
+html{
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+header{
+    text-align: center;
+}
+/* utilities */
+.read-btn{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    font-weight: 700;
+}
+/* menu */
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 35px;
+    padding: 5px 10px 0 20px;
+}
+nav.menu img.big-logo {
+    display: none;
+    height: 50px;
+}
+nav.menu img.small-logo {
+    display: block;
+    height: 30px;
+}
+nav.menu a {
+    margin-right: 30px;
+}
+a.login-link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+a.subscribe-link {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: black;
+    padding: 16px;
+}
+a.arrows-link {
+    color: black;
+}
+a.search-link, a.renew-link, a.menu-link {
+    display: none;
+}
+/* headers */
+.stories-head{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 50px 0 20px 0;
+}
+.body-head{
+    letter-spacing: .5px;
+    margin-bottom: 25px;
+}
+.body-head-sub{
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 2px;
+}
+.body-head-sub:hover{
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+}
+.line-yellow{
+    margin: 30px auto;
+    border: 2px solid var(--primary);
+    width: 30px;
+
+}
+/* main-news */
+.main-news{
+    position: relative;
+    width: 95%;
+    margin: 1rem auto;
+    height: 35rem;
+    cursor: pointer;
+}
+.main-news-img img{
+    height: 35rem;
+    width: 100rem;
+    object-fit: cover;
+    /* transition: 0.5s all ease-in-out; */
+}
+/* .main-news-img:hover img{
+    transform: scale(0.99);
+} */
+.main-news-text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+}
+.main-news-text p.title{
+    font-size: 3.5rem;
+    margin: 1rem auto;
+}
+.main-news-text h3{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 1rem 0;
+}
+.main-news-text h3 span{
+    font-weight: 300;
+}
+.main-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* secondary news */
+.secondary-news{
+    width: 95%;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+.secondary-news-img{
+    height: 30rem;
+    overflow: hidden;
+}
+.secondary-news-img img{
+    height: 40rem;
+    width: 100rem;
+    transition: 0.5s all ease-in-out;
+}
+.secondary-news-img:hover img{
+    transform: scale(1.1);
+}
+.secondary-news-text{
+    display: block;
+    background-color: white;
+    height: 12rem;
+    padding: 1rem;
+}
+.secondary-news-text h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 1rem 0 1.5rem 0;
+    color: grey;
+}
+.secondary-news-text p.secondary-body{
+    font-size: 1.8rem;
+    font-weight: 700;
+    word-spacing: 0.5rem;
+}
+.secondary-news-text p{
+    color: black;
+    font-weight: 400;
+    margin-top: 2.9rem;
+    font-size: 10px;
+}
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* todays picks */
+.tp-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 6% 3%;
+    padding: 0 2%;
+    border-left: var(--primary) solid 5px;
+}
+.flex-container img{
+    height: 120px;
+    width: 120px;
+}
+.flex-container h4{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 1%;
+}
+.flex-container h4:hover{
+    text-decoration: underline;
+}
+.flex-container p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.flex-container p:hover{
+    text-decoration: underline;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    cursor: pointer;
+}
+.flex-child{
+    margin: 0 2% 0 0;
+
+}
