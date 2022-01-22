@@ -29,3 +29,17 @@ td.error{
     margin: 30px;
     flex-basis: 10px;
 }
+.site-header{
+    display: flex;
+    flex-direction: column;
+}
+.site-header a{
+    margin: 1%;
+}
+@media(min-width:768px){
+    .site-header{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
